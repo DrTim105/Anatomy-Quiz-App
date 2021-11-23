@@ -1,11 +1,9 @@
-
 package tictactoe;
 
 
 // CLASS TicTacToe
 // simulating a game of TicTacToe between two human players
 import java.util.Scanner;
-
 
 enum Status {WIN, DRAW, CONTINUE};//public enum constants to indicate status of the game
 
@@ -251,3 +249,4 @@ public class TicTacToe
         return pointer;
     }
 }
+
