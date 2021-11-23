@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.8" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel1" min="-2" pref="729" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" pref="507" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jPanel1" min="-2" pref="796" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="203" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Type some text using your keyboard. The keys you press will be highlighted and the test will be displayed."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Note: Clicking the buttons with your mouse will not perform any action."/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Component id="jButton1" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton2" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton4" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton5" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton6" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton7" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton8" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton9" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton10" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton11" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton12" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton13" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton14" min="-2" pref="133" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jButton29" pref="75" max="32767" attributes="0"/>
+                      <Component id="jButton15" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="jButton30" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton31" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton32" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton33" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton34" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton35" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton36" min="-2" pref="45" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jButton16" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton17" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton18" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton19" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton20" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton21" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton22" min="-2" pref="45" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="jButton23" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton24" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton25" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton26" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton27" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton28" min="-2" pref="45" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jButton37" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButton38" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButton39" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButton40" min="-2" pref="45" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jButton57" min="-2" pref="45" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jButton53" min="-2" pref="45" max="-2" attributes="0"/>
+                              <Component id="jButton41" min="-2" pref="96" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jButton55" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButton56" min="-2" pref="45" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jButton42" min="-2" pref="103" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton43" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton44" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton45" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton46" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton47" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton48" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton49" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton50" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton51" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton52" min="-2" pref="45" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="203" max="-2" attributes="0"/>
+                          <Component id="jButton54" min="-2" pref="316" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton1" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton3" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton4" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton5" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton6" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton7" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton8" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton9" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton10" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton11" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton12" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton13" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton14" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton15" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton16" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton17" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton18" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton19" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton20" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton21" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton22" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton23" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton24" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton25" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton26" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton27" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton28" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton29" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton30" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton31" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton32" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton33" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton34" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton35" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton36" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton37" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton38" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton39" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton40" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton41" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton42" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton43" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton44" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton45" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton46" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton47" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton48" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton49" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton50" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton51" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton52" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton53" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton54" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton55" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton56" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButton57" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="~"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Back Quote&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="1"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;1&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="2"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;2&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="3"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;3&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="4"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;4&quot;&#xa;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="5"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;5&quot;&#xa;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="6"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;6&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="7"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;7&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton9">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="8"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;8&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton10">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="9"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;9&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton11">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="0"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;0&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton12">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="-"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Minus&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton13">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="+"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Equals&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton14">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Backspace"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Backspace&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton15">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tab"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Tab&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton16">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Q"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Q&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton17">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="W"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;W&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton18">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="E"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;E&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton19">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="R"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;R&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton20">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="T"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;T&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton21">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Y"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Y&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton22">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="U"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;U&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton23">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="I"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;I&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton24">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="O"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;O&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton25">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="P"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;P&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton26">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="["/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Open Bracket&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton27">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="]"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Close Bracket&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton28">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="\u005c" containsInvalidXMLChars="true"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Back Slash&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton29">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Caps"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Caps Lock&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton30">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="A"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;A&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton31">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="S"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;S&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton32">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="D"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;D&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton33">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="F"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;F&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton34">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="G"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;G&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton35">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="H"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;H&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton36">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="J"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;J&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton37">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="K"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;K&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton38">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="L"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;L&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton39">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=";"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Semicolon&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton40">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&quot;"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Quote&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton41">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Enter"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Enter&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton42">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Shift"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Shift&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton43">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Z"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Z&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton44">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="X"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;X&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton45">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="C"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;C&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton46">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="V"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;V&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton47">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="B"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;B&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton48">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="N"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;N&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton49">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="M"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;M&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton50">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=","/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Comma&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton51">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="."/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Period&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton52">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="?"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Slash&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton53">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="^"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Up&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton54">
+          <Properties>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Space&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton55">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="v"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Down&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton56">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&gt;"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Right&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton57">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;"/>
+            <Property name="name" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="&quot;Left&quot;" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextArea1KeyPressed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextArea1KeyReleased"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
