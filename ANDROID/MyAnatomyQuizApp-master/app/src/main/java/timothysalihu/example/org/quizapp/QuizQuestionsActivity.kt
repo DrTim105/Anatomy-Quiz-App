@@ -8,7 +8,6 @@ import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.util.Log
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -21,10 +20,11 @@ import kotlin.collections.ArrayList
 
 
 private const val TAG = "QuizQuestActivity"
+
 class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
-    enum class TimerState{
-        Stopped, Paused, Running
+    enum class TimerState {
+        Stopped, Running
     }
 
     private lateinit var timer: CountDownTimer
@@ -32,27 +32,20 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     private var timerState = TimerState.Stopped
     private var secondsRemaining = 0L
 
-    private var mCurrentPosition : Int = 1
+    private var mCurrentPosition: Int = 1
     private var mQuestionsList: ArrayList<Question>? = null
-    private var mSelectedOptionPosition : Int = 0
+    private var mSelectedOptionPosition: Int = 0
     private var clickCheck = false
     private var mCorrectAnswers: Int = 0
-    private var mUserName: String?= null
+    private var mUserName: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
-//        setSupportActionBar(findViewById(R.id.toolbar))
-//        supportActionBar?.setIcon(R.drawable.ic_timer)
-//        supportActionBar?.setIcon(R.drawable.ic_timer)
-//        supportActionBar?.title ="          Timer"
 
         mUserName = intent.getStringExtra(Constants.USER_NAME)
 
         mQuestionsList = Constants.getQuestions()
-
-        Log.d(TAG, "onCreate: called")
-
 
         setQuestion()
 
@@ -66,7 +59,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
 
     override fun onResume() {
-        Log.d(TAG, "onResume: called")
         super.onResume()
         initTimer()
 
@@ -76,7 +68,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     override fun onPause() {
         super.onPause()
 
-        if(timerState ==  TimerState.Running) {
+        if (timerState == TimerState.Running) {
             timer.cancel()
             val wakeUpTime = setAlarm(this, nowSeconds, secondsRemaining)
         }
@@ -86,8 +78,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         PrefUtil.setTimerState(timerState, this)
     }
 
-    private fun initTimer(){
-        Log.d(TAG, "initTimer: called")
+    private fun initTimer() {
 
         timerState = PrefUtil.getTimerState(this)
 
@@ -111,10 +102,10 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         updateCountDownUI()
     }
 
-    private fun onTimerFinished(){
-        Log.d(TAG, "onTimerFinished: called")
+    private fun onTimerFinished() {
 
         timerState = TimerState.Stopped
+
 
         setNewTimerLength()
 
@@ -126,8 +117,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         updateCountDownUI()
     }
 
-    private fun startTimer(){
-        Log.d(TAG, "startTimer: called")
+    private fun startTimer() {
 
         timerState = TimerState.Running
 
@@ -141,33 +131,32 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         }.start()
     }
 
-    private fun setNewTimerLength(){
-        Log.d(TAG, "setNewTimerLength: called")
+    private fun setNewTimerLength() {
 
         val lengthInMinutes = PrefUtil.getTimerLength(this)
         timerLengthSecond = (lengthInMinutes * 1L)
     }
 
-    private fun updateCountDownUI(){
-        Log.d(TAG, "updateCountDownUI: called")
+    private fun updateCountDownUI() {
 
         val minutesUntilFinished = secondsRemaining / 60
         val secondsInMinutesUntilFinished = secondsRemaining % 60
         val secondStr = secondsInMinutesUntilFinished.toString()
         tv_countdown.text = "$minutesUntilFinished:${
             if (secondStr.length == 2) secondStr
-            else "0" + secondStr}"
+            else "0" + secondStr
+        }"
     }
 
     private fun setQuestion() {
 
-//        startTimer()
-        onResume()
+        startTimer()
+        timerState = TimerState.Running
 
         clickCheck = true
         check(clickCheck)
 
-        val currentQuest : Question? = mQuestionsList!![mCurrentPosition - 1]
+        val currentQuest: Question? = mQuestionsList!![mCurrentPosition - 1]
 
         defaultOptionsView()
 
@@ -193,7 +182,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         options.add(2, tv_option_three)
         options.add(3, tv_option_four)
 
-        for(option in options) {
+        for (option in options) {
             option.setTextColor(Color.parseColor("#7A8089"))
             option.typeface = Typeface.DEFAULT
             option.background = ContextCompat.getDrawable(
@@ -204,7 +193,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        when(v?.id){
+        when (v?.id) {
             R.id.tv_option_one -> {
                 selectedOptionView(tv_option_one, 1)
             }
@@ -217,23 +206,22 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             R.id.tv_option_four -> {
                 selectedOptionView(tv_option_four, 4)
             }
-            R.id.btn_submit-> {
-                clickCheck = false
-                check(clickCheck)
+            R.id.btn_submit -> {
+
+                timer.cancel()
+                onTimerFinished()
 
                 if (mSelectedOptionPosition == 0) {
+
                     mCurrentPosition++
 
                     when {
                         mCurrentPosition <= mQuestionsList!!.size -> {
-                            mScrollView.scrollTo(0,0)
+                            mScrollView.scrollTo(0, 0)
                             setQuestion()
                         }
                         else -> {
-//                            Toast.makeText(
-//                                this, "You have sucessfully completed the Quiz",
-//                                Toast.LENGTH_SHORT
-//                            ).show()
+
                             val intent = Intent(this, ResultActivity::class.java)
                             intent.putExtra(Constants.USER_NAME, mUserName)
                             intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
@@ -265,9 +253,8 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun answerView(answer: Int, drawableView: Int) {
-        Log.d(TAG, "answerView called")
 
-        when(answer){
+        when (answer) {
             1 -> {
                 tv_option_one.background = ContextCompat.getDrawable(
                     this, drawableView
@@ -291,15 +278,14 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private fun check(check: Boolean){
+    private fun check(check: Boolean) {
         tv_option_one.isClickable = check
         tv_option_two.isClickable = check
         tv_option_three.isClickable = check
         tv_option_four.isClickable = check
     }
 
-    private fun selectedOptionView(tv: TextView, selectedOptionNum: Int)
-    {
+    private fun selectedOptionView(tv: TextView, selectedOptionNum: Int) {
         defaultOptionsView()
         mSelectedOptionPosition = selectedOptionNum
 
@@ -311,7 +297,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         )
     }
 
-    private fun onSubmit(){
+    private fun onSubmit() {
         clickCheck = false
         check(clickCheck)
 
@@ -329,10 +315,11 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         } else {
             btn_submit.text = "GO TO NEXT QUESTION"
         }
+
     }
 
-    companion object{
-        fun setAlarm(context: Context, nowSeconds: Long, secondsRemaining: Long): Long{
+    companion object {
+        fun setAlarm(context: Context, nowSeconds: Long, secondsRemaining: Long): Long {
             val wakeUpTime = (nowSeconds + secondsRemaining) * 1000
             val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
             val intent = Intent(context, TimerExpiredReceiver::class.java)
