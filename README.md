@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# TicTacToe
+A program for simulating a TicTacToe game between two players
+=======
 # Simpletron
 A computer simulator using customized machine language
 
@@ -96,3 +100,4 @@ During the execution phase, your simulator should check for various serious erro
 *** Simpletron execution abnormally terminated ***
 
 and should display a full computer dump in the format we discussed previously. This treatment will help the user locate the error in the program.
+>>>>>>> 7993c12 (Create README.md)
